@@ -1,7 +1,10 @@
 import { Module } from '@nestjs/common';
+import { GlobalEnvironmentController } from '../global-environment';
 
 @Module({
-  modules: [],
+  modules: [
+    GlobalEnvironmentController,
+  ],
 })
 export class ApplicationModule {
 }
